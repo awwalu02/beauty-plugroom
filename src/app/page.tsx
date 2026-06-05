@@ -30,7 +30,7 @@ export default function Home() {
               Shop Now
             </a>
             <a
-              href="/about"
+              href="https://wa.me/2347036768760"
               className="px-10 py-5 border-2 border-white text-white font-semibold rounded-full text-lg hover:bg-white hover:text-black transition"
             >
               Browse All Products
