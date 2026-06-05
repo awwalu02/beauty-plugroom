@@ -1,4 +1,4 @@
-// app/page.tsx
+
 import Image from 'next/image';
 import Header from '@/components/header';
 
@@ -9,12 +9,12 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <div 
+      <div
         className="relative h-screen bg-cover bg-center flex items-center justify-center bg-[url('/img.jpg')]"
-  
+
       >
         <div className="absolute inset-0 bg-black/50" />
-        
+
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-8xl font-serif font-bold text-[#FFFDC3] leading-tight mb-6">
             Beauty Plug
@@ -23,14 +23,14 @@ export default function Home() {
             Quality for Every Style
           </p>
           <div className="flex flex-col sm:flex-row gap-5 justify-center">
-            <a 
-              href="#" 
+            <a
+              href="/about"
               className="px-10 py-5 bg-white text-black font-semibold rounded-full text-lg hover:bg-rose-500 hover:text-white transition"
             >
               Shop Now
             </a>
-            <a 
-              href="#" 
+            <a
+              href="/about"
               className="px-10 py-5 border-2 border-white text-white font-semibold rounded-full text-lg hover:bg-white hover:text-black transition"
             >
               Browse All Products
@@ -45,8 +45,8 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {categories.map((cat, i) => (
             <div key={i} className="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition cursor-pointer group">
-              <Image 
-                src={cat.img} 
+              <Image
+                src={cat.img}
                 alt={cat.name}
                 width={400}
                 height={300}
@@ -66,15 +66,15 @@ export default function Home() {
             {products.map((product, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="bg-gray-100 rounded-2xl overflow-hidden">
-                  <Image 
-                    src={product.img} 
+                  <Image
+                    src={product.img}
                     alt={product.name}
                     width={400}
                     height={400}
                     className="w-full h-64 object-cover group-hover:scale-105 transition duration-300"
                   />
                 </div>
-               
+
               </div>
             ))}
           </div>
