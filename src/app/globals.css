@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+/* app.css or globals.css */
+
+
+
+
+@theme {
+    /* Sans-serif font for navigation (Menu, Cart, Log In) */
+    --font-sans: "Inter", system-ui, sans-serif;
+
+    /* Serif font for the logo (R.V) */
+    --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+
+    /* Optional: Create a custom font for the logo if you want */
+    --font-display: "Playfair Display", ui-serif, Georgia, serif;
+}
